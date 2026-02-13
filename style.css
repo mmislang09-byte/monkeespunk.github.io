@@ -1,0 +1,42 @@
+h1 {
+color:darkgreen;
+text-align: center;
+font-family:helvetica;
+border style: dotted 5px 
+border color: white;
+background-color:#AFE1AF;
+padding:10px;
+}
+
+h2 {
+color:darkgreen;
+font-family:helvetica;
+}
+	
+body{
+	background-color:lightpink;
+	text-align: center;
+	font-family:helvetica;
+	padding:20px;
+}
+
+#first{
+	float: left;
+}
+
+p{
+	color:#355E3B
+}
+		
+.monkee{
+	background-color: palevioletred;
+	border: double oldlace 5px;
+	display:inline-block;
+	text-align: center;
+	font: italic small-caps bold 25px/1.5 Helvetica, Arial, sans-serif;;
+	padding: 5px;
+}
+
+.bigguy{
+	padding: 10px;
+}
