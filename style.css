@@ -1,19 +1,19 @@
+
+*{
+	box-sizing: border-box;
+}
+
 h1 {
 color:darkgreen;
 text-align: center;
 font-family:helvetica;
-border style: dotted 5px 
-border color: white;
+border: dotted 5px;
+border-color: oldlace;
 background-color:#AFE1AF;
 padding:10px;
 font-size: 50px;
 }
 
-h2 {
-color:darkgreen;
-font-family:helvetica;
-}
-	
 body{
 	background-color:lightpink;
 	text-align: center;
@@ -21,29 +21,87 @@ body{
 	padding:20px;
 }
 
-.menu{
-	float: right;
-	background-color: plum;
-	height: 700px;
-	width: 300px;
+.container{
+	display: flex;
+	flex-wrap: wrap;
 }
-	
+
+nav{
+	width: 235px;
+	top: 200px;
+}
+
+ul{
+	list-style-type: none;
+	border: solid 2px indianred;
+	background-color: yellowgreen;
+	padding-left: 0;
+}
+
+ul li{
+	text-align: left;
+	padding: 5px;
+	border-bottom: solid black 3px;
+	font-weight: bold;
+}
+
+ul li:last-child{
+	border-bottom: none;
+}
+
+ul li a{
+	text-decoration: none;
+	color: indianred;
+	display: block;
+}
+
 .monkeeintro{
+	width: calc(100% - 255px);
 	background-color: palevioletred;
 	border: double oldlace 5px;
 	display:inline-block;
 	text-align: center;
 	padding: 30px;
+	margin-left:20px;
 }
 
-.left{
-	float: left;
-	display: flex;
-   flex-direction: column;
+.page-content{
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
 }
 
-.right{
-	float: right;
-	display: flex;
-   flex-direction: column;
+.page-content img{
+	width: 32%; 
+	height: auto;
+	aspect-ratio: 1 / 1;
+}
+
+.lonemonkkey{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.lonemonkkey img{
+	width: 100%;
+	height: auto;
+}
+
+@media all and (max-width:768px) {
+	nav{
+		width:100%;
+	}
+	.monkeeintro{
+		width:100%;
+	}
+	.page-content img{
+	width: 49%;
+	}
+}
+
+@media all and (max-width:500px) {
+	.page-content img{
+	width: 100%;
+	}
 }
