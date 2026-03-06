@@ -3,56 +3,67 @@
 	box-sizing: border-box;
 }
 
-h1 {
-color:darkgreen;
-text-align: center;
-font-family:helvetica;
+.header{
+position: fixed;
+background-color:#AFE1AF;
+color:indianred;
+font-family: helvetica;
 border: dotted 5px;
 border-color: oldlace;
-background-color:#AFE1AF;
-padding:10px;
-font-size: 50px;
+padding: 10px;
+text-align: center;
+margin: auto;
+margin-left: 1px;
+top: 0px;
+width: calc(100% - 17px);
+box-shadow: 0 10px 25px rgba(219, 112, 147, .75);
+}
+
+.header h2{
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, .75);
+}
+
+ul{
+	list-style-type: none;
+	margin: 5px 0px;
+	padding: 0;
+	overflow: hidden;
+	background-color: yellowgreen;
+	display: flex;
+	justify-content: center;
+}
+
+ul li{
+	padding: 0px;
+	font-weight: bold;
+	float: left;
+	border-right: 1px solid indianred;
+}
+
+ul li a{
+	text-decoration: none;
+	padding: 5px 10px;
+	color: indianred;
+	display: block;
+}
+
+ul li:last-child{
+	border-right: none;
 }
 
 body{
 	background-color:lightpink;
 	text-align: center;
 	font-family:helvetica;
-	padding:20px;
+	padding:0px;
+	padding-top: 150px;
 }
 
-.container{
+.flex{
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
-}
-
-nav{
-	width: 235px;
-	top: 200px;
-}
-
-ul{
-	list-style-type: none;
-	border: solid 2px indianred;
-	background-color: yellowgreen;
-	padding-left: 0;
-}
-
-ul li{
-	text-align: left;
-	padding: 5px;
-	border-bottom: solid black 3px;
-	font-weight: bold;
-}
-
-ul li:last-child{
-	border-bottom: none;
-}
-
-ul li a{
-	text-decoration: none;
-	color: indianred;
-	display: block;
 }
 
 .monkeeintro{
@@ -60,13 +71,11 @@ ul li a{
 	background-color: palevioletred;
 	border: double oldlace 5px;
 	display:inline-block;
-	text-align: center;
 	padding: 30px;
-	margin-left:20px;
+	margin: 20px 0px;
 }
 
 .page-content{
-	align-items: center;
 	justify-content: space-between;
 	width: 100%;
 	margin: 0 auto;
@@ -76,6 +85,11 @@ ul li a{
 	width: 32%; 
 	height: auto;
 	aspect-ratio: 1 / 1;
+}
+
+#mainmenu a:hover{
+	background-color: #000;
+	color: #ffffff;
 }
 
 .lonemonkkey{
@@ -104,4 +118,12 @@ ul li a{
 	.page-content img{
 	width: 100%;
 	}
+}
+
+.assignmentcontent{
+	border: double oldlace 5px;
+	background-color: peachpuff;
+	padding: 5px 20px;
+	margin: 15px auto;
+	text-align: left;
 }
