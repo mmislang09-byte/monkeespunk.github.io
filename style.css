@@ -2,28 +2,53 @@
 *{
 	box-sizing: border-box;
 }
+	
+body{
+	background-color:lightpink;
+	text-align: center;
+	font-family:helvetica;
+	margin: auto 100px;
+	padding-top: 20px;
+}
+
+.jacquard-24-regular {
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px;
+}
+
+h1 {
+	color:indianred;
+	font-family: "Jacquard 24";
+	font-size: 70px;
+	margin: 20px auto;
+}
+
+h2 {
+	color:darkgreen;
+	font-family: "Jacquard 24";
+	margin: 0px auto;
+	font-size: 50px;
+}
+
+p{
+	color:#355E3B
+}
 
 .header{
-position: fixed;
-background-color:#AFE1AF;
-color:indianred;
-font-family: helvetica;
-border: dotted 5px;
-border-color: oldlace;
-padding: 10px;
-text-align: center;
-margin: auto;
-margin-left: 1px;
-top: 0px;
-width: calc(100% - 17px);
-box-shadow: 0 10px 25px rgba(219, 112, 147, .75);
+	background-color:#AFE1AF;
+	color:indianred;
+	font-family: "Times New Roman", serif;
+	border: 5px dotted oldlace;
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+	margin: auto;
+	box-shadow: 0 10px 25px rgba(219, 112, 147, .75);
 }
 
-.header h2{
-	text-shadow: 3px 3px 0px rgba(0, 0, 0, .75);
-}
-
-ul{
+.header ul{
 	list-style-type: none;
 	margin: 5px 0px;
 	padding: 0;
@@ -33,30 +58,23 @@ ul{
 	justify-content: center;
 }
 
-ul li{
+.header ul li{
 	padding: 0px;
 	font-weight: bold;
 	float: left;
 	border-right: 1px solid indianred;
+	font-family: helvetica;
 }
 
-ul li a{
+.header ul li a{
 	text-decoration: none;
 	padding: 5px 10px;
 	color: indianred;
 	display: block;
 }
 
-ul li:last-child{
+.header ul li:last-child{
 	border-right: none;
-}
-
-body{
-	background-color:lightpink;
-	text-align: center;
-	font-family:helvetica;
-	padding:0px;
-	padding-top: 150px;
 }
 
 .flex{
@@ -66,64 +84,99 @@ body{
 	flex-wrap: wrap;
 }
 
-.monkeeintro{
-	width: calc(100% - 255px);
-	background-color: palevioletred;
-	border: double oldlace 5px;
-	display:inline-block;
-	padding: 30px;
-	margin: 20px 0px;
-}
-
-.page-content{
-	justify-content: space-between;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.page-content img{
-	width: 32%; 
-	height: auto;
-	aspect-ratio: 1 / 1;
-}
-
 #mainmenu a:hover{
 	background-color: #000;
 	color: #ffffff;
-}
-
-.lonemonkkey{
-	width: 100%;
-	margin: 0 auto;
-}
-
-.lonemonkkey img{
-	width: 100%;
-	height: auto;
-}
-
-@media all and (max-width:768px) {
-	nav{
-		width:100%;
-	}
-	.monkeeintro{
-		width:100%;
-	}
-	.page-content img{
-	width: 49%;
-	}
-}
-
-@media all and (max-width:500px) {
-	.page-content img{
-	width: 100%;
-	}
 }
 
 .assignmentcontent{
 	border: double oldlace 5px;
 	background-color: peachpuff;
 	padding: 5px 20px;
-	margin: 15px auto;
+	padding-bottom: 20px;
+	margin: 15px 50px;
 	text-align: left;
+	line-height: 2;
+	font-family: "Times New Roman", serif;
+	font-size: 11pt;
+}
+
+.assignmentcontent p{
+	color: black;
+}
+
+#jobmarketoutlook img{
+	width: calc(100% - 200px);
+	height: auto;
+	aspect-ratio: 1 / 1;
+}
+
+.monkee{
+	background-color: peachpuff;
+	width: calc(100% - 900px);
+	height: auto;
+	border: double oldlace 5px;
+	text-align: center;
+	font: italic small-caps bold 16pt Helvetica, Arial, sans-serif;
+	padding: 5px;
+	margin: 10px;
+	display: inline-block;
+	flex-wrap: wrap;
+	overflow: hidden;
+	aspect-ratio: 1 / 1;
+}
+
+.monkee img{
+	width: calc(100% - 200px);
+	height: auto;
+}
+
+.container{
+	margin-bottom: 150px;
+}
+
+.weblist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.weblist li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.weblist li a:hover {
+  background-color: yellowgreen;
+  color: indianred;
+}
+
+@media all and (max-width:600px) {
+	.monkee{
+		width:100%;
+	}
+	#jobmarketoutlook img{
+		width: 100%;
+	}
+}
+
+@media all and (max-width:500px) {
+	.monkee img{
+	width: 100%;
+	}
+	#jobmarketoutlook img{
+		width: 100%;
+	}
+}
+
+#nala img{
+	width: 100%;
+}
+
+#sparkee img{
+	width: calc(100% - 87px);
 }
